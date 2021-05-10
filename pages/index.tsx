@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react'
-import Head from 'next/head'
 import { Banner } from './components/Banner'
+import { Categories } from './components/Categories'
 import { Header } from './components/Header'
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
     >
       <Header />
       <Banner />
+      <Categories />
     </Flex>
   )
 }

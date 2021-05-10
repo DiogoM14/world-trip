@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Image, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
 export function Banner() {
   return (
