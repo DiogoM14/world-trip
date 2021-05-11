@@ -7,6 +7,8 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet" />
+
+          <link rel="shortcut icon" href="airplane.png" type="image/png" />
         </Head>
         <body>
           <Main />

@@ -5,6 +5,7 @@ export function Banner() {
     <Flex
       justifyContent="space-between"
       pos="relative"
+      align="center"
     >
       <Image src="landing-bg.png" />
 
@@ -13,7 +14,7 @@ export function Banner() {
           justify="space-between"
           align="center"
           w="100%"
-          px={24}
+          px="24"
 
         >
           <Box>
