@@ -11,7 +11,7 @@ export function Category({ iconName, description }: CategoryProps) {
       <Image w={20} src={`${iconName}.svg`} />
         <Text
           fontSize={24}
-          fontWeight="semibold"
+          fontWeight="medium"
           mt={6}
         >
           {description}
