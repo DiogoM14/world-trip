@@ -22,7 +22,7 @@ export default function Home() {
       <Categories />
 
       <Divider 
-        w={22}
+        w={120}
         borderBottomWidth="2px"
         borderColor="gray.700"
         opacity={1}
