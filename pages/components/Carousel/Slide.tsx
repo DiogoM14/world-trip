@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Box, Container, Flex, Image, Text } from "@chakra-ui/react"
 
 interface SlideProps {
@@ -9,28 +10,30 @@ interface SlideProps {
 export function Slide({ city, continent, abstract }: SlideProps) {
   return (
     <Container className="keen-slider__slide">
-      <Flex
-        pos="relative"
-      >
-        <Image 
-          borderRadius="5" 
-          w="100%"  
-          objectFit="cover"
-          filter="brightness(65%)"
-          height="450px" 
-          src={`${city}.jpg`}
-        />
-
-        <Box 
-          pos="absolute"
-          w="100%"
-          align="center"
-          mt="170px"
+      <Link href={`${continent}`}>
+        <Flex
+          pos="relative"
         >
-          <Text fontSize="3rem" fontWeight="700" color="gray.10">{continent}</Text>
-          <Text fontSize="1.5rem" fontWeight="700" color="gray.50">{abstract}</Text>
-        </Box>
-      </Flex>
+          <Image 
+            borderRadius="5" 
+            w="100%"  
+            objectFit="cover"
+            filter="brightness(65%)"
+            height="450px" 
+            src={`${city}.jpg`}
+          />
+
+          <Box 
+            pos="absolute"
+            w="100%"
+            align="center"
+            mt="170px"
+          >
+            <Text fontSize="3rem" fontWeight="700" color="gray.10">{continent}</Text>
+            <Text fontSize="1.5rem" fontWeight="700" color="gray.50">{abstract}</Text>
+          </Box>
+        </Flex>
+      </Link>
     </Container>
   )
 }
