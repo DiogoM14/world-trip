@@ -1,6 +1,6 @@
-import { Container } from "@chakra-ui/react"
 import { GetServerSideProps } from "next"
 import Head from "next/head"
+import { Container } from "@chakra-ui/react"
 import { Header } from "./components/Header"
 
 export default function ContinentPage({ continent }) {
@@ -11,7 +11,6 @@ export default function ContinentPage({ continent }) {
       </Head>
       <Header />
 
-      
     </Container>
   )
 } 

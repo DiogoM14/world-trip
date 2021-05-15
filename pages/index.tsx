@@ -17,7 +17,7 @@ export default function Home() {
         <title>Home | World travel</title>
       </Head>
 
-      <Header />
+      <Header showBack={false} />
       <Banner />
       <Categories />
 
