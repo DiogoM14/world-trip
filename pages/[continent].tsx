@@ -1,8 +1,9 @@
 import { GetServerSideProps } from "next"
 import Head from "next/head"
-import { Container, Flex } from "@chakra-ui/react"
+import { Flex } from "@chakra-ui/react"
 import { Header } from "./components/Header"
 import { ContinentBanner } from "./components/ContinentBanner"
+import { ContinentDescription } from "./components/ContinentDescription"
 
 export default function ContinentPage({ continent }) {
   return (
@@ -17,6 +18,7 @@ export default function ContinentPage({ continent }) {
       <Header />
 
       <ContinentBanner continent={continent} />
+      <ContinentDescription />
     </Flex>
   )
 } 
