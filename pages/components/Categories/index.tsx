@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, Text, Wrap, WrapItem } from "@chakra-ui/react"
+import { Flex, Grid } from "@chakra-ui/react"
 import { Category } from "./Category"
 
 export function Categories() {

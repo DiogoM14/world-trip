@@ -1,6 +1,11 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export function Banner() {
+  const showPlaneImage = useBreakpointValue({
+
+  })
+
+
   return (
     <Flex
       justifyContent="space-between"
@@ -11,18 +16,18 @@ export function Banner() {
 
         <Flex
           pos="absolute"
-          justify="space-between"
+          justify={["center" ,"space-between"]}
           align="center"
           w="100%"
-          px="24"
+          px={["16", "16"]}
 
         >
           <Box>
             <Text 
-              fontSize="4xl" 
+              fontSize={["2xl", "4xl"]} 
               color="#fff"
               maxW="426px"
-              mb="4"
+              mb={["0", "4"]}
             >
               5 Continentes, infinitas possibilidades.
             </Text>

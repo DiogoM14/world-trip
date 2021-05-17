@@ -10,7 +10,7 @@ import { LandingTitle } from './components/LandingTitle'
 export default function Home() {
   return (
     <Flex
-    flexDir="column"
+      flexDir="column"
       align="center"
     >
       <Head>

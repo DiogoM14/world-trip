@@ -12,15 +12,18 @@ export function Header({ showBack = true }: HeaderProps) {
   return (
     <Container
       as="header"
-      // maxW="container.lg"
-      w="100%"
-      centerContent
+      maxW="container.lg"
       pos="relative"
+      centerContent
     >
       { showBack && (
         <Container
           pos="absolute"
           left="0"
+          display="flex"
+          alignItems="center"
+          h="100%"
+          ml="1rem"
         >
           <FiArrowLeft cursor="pointer" fontSize="1.5rem" onClick={() => router.back()} />
         </Container>
