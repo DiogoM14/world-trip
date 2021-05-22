@@ -1,10 +1,10 @@
-import { Flex, Grid, GridItem, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Text } from "@chakra-ui/react";
 import { Info } from "./Info";
 
 export function ContinentDescription() {
   return (
-    <Grid templateColumns="repeat(3, 1fr)" gap={8} maxW="1160px" mt="20" marginX="5">
-      <GridItem colSpan={2}>
+    <Grid templateColumns="600px 1fr" gap={14} maxW="1160px" mt="20" marginX="5">
+      <GridItem>
         <Text
           color="gray.700"
           fontSize="1.5rem"
@@ -17,8 +17,9 @@ export function ContinentDescription() {
         display="flex" 
         w="100%" 
         justifyContent="space-around"
+        alignItems="center"
       >
-        <Info description="Países" quantity={50} />
+        <Info description="Países" quantity={50}  />
         <Info description="Linguas" quantity={60} />
         <Info description="Cidades +100" quantity={27} />
       </GridItem>

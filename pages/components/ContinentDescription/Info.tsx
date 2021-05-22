@@ -10,6 +10,8 @@ export function Info({ description, quantity }: InfoProps) {
     <WrapItem
       display="flex" 
       flexDir="column"
+      alignItems="center"
+      marginX="22px"
     >
       <Text 
         color="yellow.900"

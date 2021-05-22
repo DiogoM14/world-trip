@@ -4,6 +4,7 @@ import { Flex } from "@chakra-ui/react"
 import { Header } from "./components/Header"
 import { ContinentBanner } from "./components/ContinentBanner"
 import { ContinentDescription } from "./components/ContinentDescription"
+import { ContinentAvailableCities } from "./components/ContinentAvailableCities"
 
 export default function ContinentPage({ continent }) {
   return (
@@ -19,6 +20,7 @@ export default function ContinentPage({ continent }) {
 
       <ContinentBanner continent={continent} />
       <ContinentDescription />
+      <ContinentAvailableCities />
     </Flex>
   )
 } 
