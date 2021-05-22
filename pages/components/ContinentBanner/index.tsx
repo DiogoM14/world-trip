@@ -8,13 +8,14 @@ export function ContinentBanner({ continent }: ContinentBannerProps) {
   return (
     <Flex
       w="100%"
+      maxW="1440px"
     >
       <Flex
         pos="relative"
         m="0 auto"
       >
         <Image 
-          maxW="1440px"
+          w="100%"
           maxH="500px"
           filter="brightness(65%)"
           src="porto.jpg" 
