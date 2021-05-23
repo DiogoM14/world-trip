@@ -4,12 +4,13 @@ export function Card() {
   return (
     <Box
       maxW="256px"
+      h="280"
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
     >
       <Image 
-      objectFit="cover"
+        objectFit="cover"
         maxH="173px"
         h="100%"
         src="porto.jpg" 

@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Grid, GridItem, Text } from "@chakra-ui/react";
 import { Info } from "./Info";
 
 export function ContinentDescription() {
